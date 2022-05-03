@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>My page title</title>
+    <title>Samantha Thorpe Start Page</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
 
     <style>
@@ -24,9 +24,56 @@
         --c-cyan: rgb(42,161,152);
         --c-green: rgb(133,153,0);
       }
-      header {color: var(--base-font-color); background-color: var(--c-background-highlights);}
-      body {color: var(--base-font-color); background-color: var(--c-background-color);}
-      footer {color: var(--base-font-color); background-color: var(--c-background-highlights);}
+
+      header {
+        color: var(--c-yellow); 
+        background-color: var(--c-background-highlights); 
+        text-align: center; 
+        text-size-adjust: 150;
+        width: 800px;
+      }
+      body {
+        color: var(--base-font-color); 
+        background-color: var(--c-background-color);
+        max-width: 800px;
+      }
+      footer {
+        color: var(--base-font-color); 
+        background-color: var(--c-background-highlights);
+      }
+      nav .flex-container {
+        width: 800px;
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        flex-flow: space-evenly ; 
+        justify-content: space-between; 
+        align-items: stretch;
+        column-gap: 30px;
+      }
+      article{
+        margin-left: 10px;
+        width: 85%;
+        position: absolute;
+        article li a:hover{color: var(--c-orange)}
+        article li a:{color: var(--c-magenta);}
+      }
+
+      aside {
+       color: var(--c-green);
+       margin-left: 50px;
+       float: right;
+       width: 10%;
+       position: absolute;
+       top: 105px;
+       right: 40px
+      }
+      ul li a:hover{color: var(--c-blue);}
+      ul li a {color: var(--c-red)}
+      h1{padding-top: 50px;}
+      h2{padding-top: 50px;}
+      h3{padding-top: 50px;}
+
     </style>
 
   </head>
@@ -40,10 +87,10 @@
 
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <a href="#">Home</a>
+        <a href="#">Our team</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
       </ul>
 
        <!-- A Search form is another common non-linear way to navigate through a website. -->
@@ -58,6 +105,7 @@
     <main>
 
       <!-- It contains an article -->
+    
       <article>
         <h2>Article heading</h2>
 
@@ -93,7 +141,7 @@
 
     <!-- And here is our main footer that is used across all the pages of our website -->
 
-    <footer>
+    <footer style="color: var(--c-background-highlights); font-style: var(--base-font-color);">
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
 
